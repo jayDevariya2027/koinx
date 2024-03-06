@@ -2,13 +2,9 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="bg-white pl-4 flex justify-between items-center border">
+    <header className="bg-white p-4 flex justify-between items-center border">
       <div className="ml-4">
-        <img
-          className="w-40 h-24"
-          src="../src/assets/new logo.svg"
-          alt="Logo"
-        />
+        <img className="h-10" src="../src/assets/logo.png" alt="Logo" />
       </div>
 
       <div className="flex items-center mr-4 gap-4">
