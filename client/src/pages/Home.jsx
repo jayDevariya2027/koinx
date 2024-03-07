@@ -7,6 +7,7 @@ import Performance from "../components/Performance";
 import Sentiments from "../components/Sentiments";
 import { useState } from "react";
 import { useEffect } from "react";
+import AboutBitcoin from "../components/AboutBitcoin";
 
 export default function Home() {
   const [bitcoinData, setBitcoinData] = useState("");
@@ -118,7 +119,9 @@ export default function Home() {
           </div>
 
           {/* about bitcoin */}
-          <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6">
+            <AboutBitcoin />
+          </div>
 
           {/* tokenomics */}
           <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
