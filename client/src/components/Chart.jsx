@@ -11,8 +11,8 @@ function TradingViewWidget() {
     script.async = true;
     script.innerHTML = `
         {
-            "width": "810",
-            "height": "400",
+          "width": "100%",
+          "height": "400",
           "symbol": "BITSTAMP:BTCUSD",
           "interval": "D",
           "timezone": "Etc/UTC",
@@ -36,10 +36,35 @@ function TradingViewWidget() {
 
   return (
     <div className="tradingview-widget-container" ref={container}>
-      <div
-        className="tradingview-widget-container__widget"
-        style={{ height: "calc(100% - 32px)", width: "100%" }}
-      ></div>
+      <div className="tradingview-widget-container__widget"></div>
+      <style jsx>{`
+        .tradingview-widget-container {
+          position: relative;
+          width: 100%;
+          max-width: 100%;
+          height: 400px;
+        }
+
+        @media (max-width: 768px) {
+          .tradingview-widget-container {
+            height: 300px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .tradingview-widget-container {
+            height: 200px;
+          }
+        }
+
+        .tradingview-widget-container__widget {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      `}</style>
     </div>
   );
 }
