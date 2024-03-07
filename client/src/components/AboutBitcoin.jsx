@@ -6,7 +6,7 @@ export default function AboutBitcoin() {
     <div>
       <p className="text-3xl font-semibold">About Bitcoin</p>
       <p className="font-bold text-md mt-4">What is Bitcoin?</p>
-      <p className="mt-2">
+      <p className="mt-2 text-justify">
         Bitcoin (BTC) is a cryptocurrency, a virtual currency designed to act as
         money and a form of payment outside the control of any one person,
         group, or entity, thus removing the need for third-party involvement in
@@ -14,7 +14,7 @@ export default function AboutBitcoin() {
         verifying transactions and can be purchased on several exchanges.
       </p>
       <div className="border-b border-gray-300 my-4"></div>
-      <p>
+      <p className="text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         necessitatibus repellendus ducimus at ipsam ex officia distinctio
         voluptatem veniam provident quibusdam sapiente neque suscipit,
@@ -22,7 +22,7 @@ export default function AboutBitcoin() {
         voluptate aliquid. Id nulla eius modi quod.
       </p>
       <br />
-      <p>
+      <p className="text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
         ipsa magni quibusdam, nisi eum fuga dolor praesentium quia voluptas,
         officia earum doloribus cumque facilis eligendi velit nesciunt quae
@@ -32,7 +32,7 @@ export default function AboutBitcoin() {
         saepe vero tempora voluptatem est!
       </p>
       <br />
-      <p>
+      <p className="text-justify">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
         animi velit aliquam blanditiis inventore quam recusandae modi illo aut
         deserunt. Nostrum mollitia, reprehenderit velit sapiente sit nam quasi
@@ -85,7 +85,7 @@ export default function AboutBitcoin() {
         </div>
       </div>
       <div className="border-b border-gray-300 my-4"></div>
-      <p>
+      <p className="text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus
         tempora voluptatibus quibusdam cum molestias, nobis nesciunt dolores
         dignissimos maiores aspernatur saepe id esse perspiciatis, qui ipsa

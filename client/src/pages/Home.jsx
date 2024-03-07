@@ -8,6 +8,8 @@ import Sentiments from "../components/Sentiments";
 import { useState } from "react";
 import { useEffect } from "react";
 import AboutBitcoin from "../components/AboutBitcoin";
+import Tokenomics from "../components/Tokenomics";
+import Team from "../components/Team";
 
 export default function Home() {
   const [bitcoinData, setBitcoinData] = useState("");
@@ -124,10 +126,14 @@ export default function Home() {
           </div>
 
           {/* tokenomics */}
-          <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6">
+            <Tokenomics/>
+          </div>
 
           {/* team */}
-          <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6">
+            <Team/>
+          </div>
         </div>
 
         {/* right */}

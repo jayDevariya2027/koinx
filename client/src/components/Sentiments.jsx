@@ -52,16 +52,16 @@ export default function Sentiments() {
               <HiOutlineNewspaper className="text-white text-2xl" />
             </div>
             <div>
-              <h2 className="font-medium my-3">
+              <p className="font-medium my-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
                 illum?
-              </h2>
-              <h4 className="mb-2">
+              </p>
+              <p className="mb-2 text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae nostrum accusamus nihil itaque, temporibus saepe
                 obcaecati excepturi repudiandae, voluptas ipsam rem aut tempora
                 ullam enim nemo tempore facere maxime veniam.
-              </h4>
+              </p>
             </div>
           </div>
         </div>
@@ -74,16 +74,16 @@ export default function Sentiments() {
               <IoMdTrendingUp className="text-white text-2xl" />
             </div>
             <div>
-              <h2 className="font-medium my-3">
+              <p className="font-medium my-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
                 illum?
-              </h2>
-              <h4 className="mb-2">
+              </p>
+              <p className="mb-2 text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae nostrum accusamus nihil itaque, temporibus saepe
                 obcaecati excepturi repudiandae, voluptas ipsam rem aut tempora
                 ullam enim nemo tempore facere maxime veniam.
-              </h4>
+              </p>
             </div>
           </div>
         </div>
@@ -121,39 +121,6 @@ export default function Sentiments() {
           <CiCircleInfo className="text-white font-bold" />
         </div>
       </div>
-      {/* <div className="flex gap-16 mt-4 items-center">
-        <div
-          className="flex items-center justify-center rounded-full p-2 h-24 w-24    "
-          style={{ background: "#DCFCE7" }}
-        >
-          <h1 className="text-2xl font-bold" style={{ color: "#0FBA83" }}>
-            76%
-          </h1>
-        </div>
-        <div>
-          <div className="flex  text-gray-500 mb-2 font-medium items-center">
-            <div className="mr-8">Buy</div>
-            <div
-              className="w-80 h-2 rounded-md"
-              style={{ background: "#0FBA83" }}
-            ></div>
-            <div className="ml-2">76%</div>
-          </div>
-          <div className="flex  text-gray-500 mb-2 font-medium items-center">
-            <div className="mr-6">Hold</div>
-            <div className="w-10 h-2 rounded-md bg-gray-300"></div>
-            <div className="ml-2">8%</div>
-          </div>
-          <div className="flex text-gray-500 mb-2 font-medium items-center">
-            <div className="mr-8">Sell</div>
-            <div
-              className="w-16 h-2 rounded-md"
-              style={{ background: "#F7324C" }}
-            ></div>
-            <div className="ml-2">16%</div>
-          </div>
-        </div>
-      </div> */}
       <div className="flex gap-10 mt-4 items-center">
         <div
           className="flex items-center justify-center rounded-full p-2 h-24 w-24 sm:w-24 sm:h-24"
