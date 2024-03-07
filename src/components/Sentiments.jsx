@@ -123,7 +123,7 @@ export default function Sentiments() {
       </div>
       <div className="flex gap-10 mt-4 items-center">
         <div
-          className="flex items-center justify-center rounded-full p-2 h-24 w-24 sm:w-24 sm:h-24"
+          className="flex items-center justify-center rounded-full p-2 h-16 w-16 sm:w-24 sm:h-24"
           style={{ background: "#DCFCE7" }}
         >
           <h1 className="text-2xl font-bold" style={{ color: "#0FBA83" }}>
@@ -132,22 +132,22 @@ export default function Sentiments() {
         </div>
         <div>
           <div className="flex text-gray-500 mb-2 font-medium items-center">
-            <div className="mr-8">Buy</div>
+            <div className="mr-4 sm:mr-8">Buy</div>
             <div
-              className="w-32 h-2 rounded-md sm:w-80"
+              className="w-16 h-2 rounded-md sm:w-80"
               style={{ background: "#0FBA83" }}
             ></div>
             <div className="ml-2">76%</div>
           </div>
           <div className="flex text-gray-500 mb-2 font-medium items-center">
-            <div className="mr-6">Hold</div>
-            <div className="w-3 h-2 rounded-md bg-gray-300 sm:w-10"></div>
+            <div className="mr-3 sm:mr-6">Hold</div>
+            <div className="w-2 h-2 rounded-md bg-gray-300 sm:w-10"></div>
             <div className="ml-2">8%</div>
           </div>
           <div className="flex text-gray-500 mb-2 font-medium items-center">
-            <div className="mr-8">Sell</div>
+            <div className="mr-4 sm:mr-8">Sell</div>
             <div
-              className="w-6 h-2 rounded-md sm:w-20"
+              className="w-4 h-2 rounded-md sm:w-20"
               style={{ background: "#F7324C" }}
             ></div>
             <div className="ml-2">16%</div>
