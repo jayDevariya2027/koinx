@@ -15,7 +15,7 @@ export default function Performance({
     ((priceOfBitcoin - low52Week) / (high52Week - low52Week)) * 100;
 
   return (
-    <div className="mt-4 mb-3">
+    <div>
       <h2 className="text-3xl font-semibold mb-6">Performance</h2>
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start mr-4">
@@ -76,62 +76,78 @@ export default function Performance({
       <div className="mt-6 flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-12">
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">Bitcoin Price</span>
+            <span className="text-gray-500 my-2 font-medium">
+              Bitcoin Price
+            </span>
             <span className="font-medium text-gray-700 my-2">$16815.46</span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">24h Low / 24h High</span>
+            <span className="text-gray-500 my-2 font-medium">
+              24h Low / 24h High
+            </span>
             <span className="font-medium text-gray-700 my-2">
               $16382.07 / $16874.12
             </span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">7d Low / 7d High</span>
+            <span className="text-gray-500 my-2 font-medium">
+              7d Low / 7d High
+            </span>
             <span className="font-medium text-gray-700 my-2">
               $16382.07 / $16874.12
             </span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">Trading Value</span>
+            <span className="text-gray-500 my-2 font-medium">
+              Trading Value
+            </span>
             <span className="font-medium text-gray-700 my-2">
               $23,249,202,782
             </span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">Market Cap Rank</span>
+            <span className="text-gray-500 my-2 font-medium">
+              Market Cap Rank
+            </span>
             <span className="font-medium text-gray-700 my-2">#1</span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
         </div>
         <div className="md:w-1/2 md:pl-2">
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">Market Cap</span>
+            <span className="text-gray-500 my-2 font-medium">Market Cap</span>
             <span className="font-medium text-gray-700 my-2">
               $323,507,290,047
             </span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">Market Cap Dominance</span>
+            <span className="text-gray-500 my-2 font-medium">
+              Market Cap Dominance
+            </span>
             <span className="font-medium text-gray-700 my-2">38.343%</span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">Volume / Market Cap</span>
+            <span className="text-gray-500 my-2 font-medium">
+              Volume / Market Cap
+            </span>
             <span className="font-medium text-gray-700 my-2">0.0718</span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">All-Time High</span>
+            <span className="text-gray-500 my-2 font-medium">
+              All-Time High
+            </span>
             <span className="font-medium text-gray-700 my-2">$69,044.77</span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2">All-Time Low</span>
+            <span className="text-gray-500 my-2 font-medium">All-Time Low</span>
             <span className="font-medium text-gray-700 my-2">$67.81</span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>

@@ -4,7 +4,7 @@ import { FaBitcoin } from "react-icons/fa";
 import { IoMdArrowDropup } from "react-icons/io";
 import Chart from "../components/Chart";
 import Performance from "../components/Performance";
-
+import Sentiments from "../components/Sentiments";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -87,8 +87,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-6">
-            <ul className="flex flex-wrap gap-2 sm:gap-8 border-b border-gray-300 font-semibold">
+          <div className="mt-6 overflow-hidden">
+            <ul className="flex gap-8 border-b border-gray-300 font-semibold">
               <li className="border-b border-blue-800 text-blue-800">
                 Overview
               </li>
@@ -113,16 +113,18 @@ export default function Home() {
           </div>
 
           {/* sentiments */}
-          <div></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6">
+            <Sentiments />
+          </div>
 
           {/* about bitcoin */}
-          <div></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
 
           {/* tokenomics */}
-          <div></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
 
           {/* team */}
-          <div></div>
+          <div className="bg-white p-6 border border-white rounded-lg mt-6"></div>
         </div>
 
         {/* right */}
