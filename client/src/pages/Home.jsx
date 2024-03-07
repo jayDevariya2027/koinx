@@ -33,7 +33,6 @@ export default function Home() {
     fetchApi();
   }, []);
 
-  console.log(bitcoinData);
   return (
     <div className="my-5">
       <div className="flex items-center ml-8">
@@ -127,12 +126,12 @@ export default function Home() {
 
           {/* tokenomics */}
           <div className="bg-white p-6 border border-white rounded-lg mt-6">
-            <Tokenomics/>
+            <Tokenomics />
           </div>
 
           {/* team */}
           <div className="bg-white p-6 border border-white rounded-lg mt-6">
-            <Team/>
+            <Team />
           </div>
         </div>
 
