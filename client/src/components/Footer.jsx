@@ -113,11 +113,10 @@ export default function Footer() {
                         className={`flex items-center border rounded-md font-semibold text-red-800 bg-red-100`}
                       >
                         <span className="ml-1 mr-2">
-                          {trendingCoins[
-                            index
-                          ].item.data.price_change_percentage_24h.usd.toFixed(
-                            2
-                          )}
+                          {Math.round(
+                            trendingCoins[index].item.data
+                              .price_change_percentage_24h.usd * 100
+                          ) / 100}
                           %
                         </span>
                       </div>
@@ -168,9 +167,9 @@ export default function Footer() {
                       className={`flex items-center border rounded-md font-semibold text-red-800 bg-red-100`}
                     >
                       <span className="ml-1 mr-2">
-                        {coin.item.data.price_change_percentage_24h.usd.toFixed(
-                          2
-                        )}
+                        {Math.round(
+                          coin.item.data.price_change_percentage_24h.usd * 100
+                        ) / 100}
                         %
                       </span>
                     </div>
