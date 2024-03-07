@@ -65,7 +65,7 @@ export default function Home() {
         <span className="text-xl font-semibold">Bitcoin</span>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 m-8 mt-4">
+      <div className="flex flex-col md:flex-row gap-4 m-2 sm:m-8 mt-4">
         {/* left */}
         <div className="w-full md:w-3/4">
           {/* bitcoin */}
@@ -147,8 +147,8 @@ export default function Home() {
                 Overview
               </li>
               <li>Fundamentals</li>
-              <li>News Insights</li>
               <li>Sentiments</li>
+              <li>News Insights</li>
               <li>Team</li>
               <li>Technicals</li>
               <li>Tokenomics</li>

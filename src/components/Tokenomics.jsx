@@ -32,7 +32,7 @@ export default function Tokenomics() {
     <div>
       <p className="text-3xl font-semibold">Tokenomics</p>
       <p className="mt-4 font-bold">Initial Distribution</p>
-      <div className="mt-4 w-full sm:w-2/3" style={{ width: "65%" }}>
+      <div className="mt-4 w-full sm:w-2/3">
         <div className="flex items-center">
           <Chart
             options={chartConfig.options}

@@ -38,7 +38,7 @@ export default function Performance({
           </div>
         </div>
         <div className="flex flex-col items-end ml-4">
-          <div>Today's High</div>
+          <div className="text-right">Today's High</div>
           <div>{todayHigh}</div>
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function Performance({
           ></div>
         </div>
         <div className="flex flex-col items-end ml-4">
-          <div>52W High</div>
+          <div className="text-right">52W High</div>
           <div>{high52Week}</div>
         </div>
       </div>
@@ -83,19 +83,19 @@ export default function Performance({
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2 font-medium">
+            <span className="text-gray-500 my-2 font-medium ">
               24h Low / 24h High
             </span>
-            <span className="font-medium text-gray-700 my-2">
+            <span className="font-medium text-gray-700 my-2 text-end">
               $16382.07 / $16874.12
             </span>
           </div>
           <div className="border-b border-gray-300 my-2"></div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-500 my-2 font-medium">
-              7d Low / 7d High
+            <span className="text-gray-500 my-2 font-medium mr-1">
+              7w Low / 7w High
             </span>
-            <span className="font-medium text-gray-700 my-2">
+            <span className="font-medium text-gray-700 my-2 text-end">
               $16382.07 / $16874.12
             </span>
           </div>
