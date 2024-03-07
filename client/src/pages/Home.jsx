@@ -68,12 +68,26 @@ export default function Home() {
               <span className="text-2xl font-semibold">
                 $ {bitcoinData.usd}
               </span>
-              <div
-                className={`flex items-center ml-6 border rounded-md font-semibold text-green-800 bg-green-100`}
-              >
-                <IoMdArrowDropup className="text-2xl" />
-                <span className="ml-1 mr-2">{bitcoinData.usd_24h_change}%</span>
-              </div>
+              {bitcoinData.usd_24h_change > 0 ? (
+                <div
+                  className={`flex items-center ml-6 border rounded-md font-semibold text-green-800 bg-green-100`}
+                >
+                  <IoMdArrowDropup className="text-2xl" />
+                  <span className="ml-1 mr-2">
+                    {bitcoinData.usd_24h_change.toFixed(2)}%
+                  </span>
+                </div>
+              ) : (
+                <div
+                  className={`flex items-center ml-6 border rounded-md font-semibold text-red-800 bg-red-100`}
+                >
+                  <IoMdArrowDropup className="text-2xl" />
+                  <span className="ml-1 mr-2">
+                    {bitcoinData.usd_24h_change.toFixed(2)}%
+                  </span>
+                </div>
+              )}
+
               <span
                 className="ml-3 text-sm font-semibold"
                 style={{ color: "#768396" }}
