@@ -199,11 +199,7 @@ export default function Home() {
                 Molestias quae ipsum accusantium quibusdam. Amet autem quae
                 tenetur, voluptatum modi nihil
               </p>
-              <img
-                className="h-32 mb-4"
-                src="../src/assets/image3.png"
-                alt="Logo"
-              />
+              <img className="h-32 mb-4" src="/assets/image3.png" alt="Logo" />
               <button className="bg-white text-black px-4 py-2 rounded-md font-semibold">
                 Get Started for Free
               </button>

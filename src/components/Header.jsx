@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="bg-white p-4 flex justify-between items-center border">
       <div className="ml-4">
-        <img className="h-10" src="../src/assets/logo.png" alt="Logo" />
+        <img className="h-10" src="/assets/logo.png" alt="Logo" />
       </div>
 
       {/* Show hamburger menu for small screens */}

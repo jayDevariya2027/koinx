@@ -18,7 +18,7 @@ export default function Team() {
         <div className="w-3/5 p-2 flex flex-col items-center justify-center">
           <img
             className="h-24 w-24 border-0 rounded-md"
-            src="../src/assets/image1.jpg"
+            src="/assets/image1.jpg"
             alt="bitcoin"
           />
           <p className="font-semibold mt-3 text-center">John Smith</p>
@@ -41,7 +41,7 @@ export default function Team() {
         <div className="w-3/5 p-2 flex flex-col items-center justify-center">
           <img
             className="h-24 w-24 border-0 rounded-md"
-            src="../src/assets/image1.jpg"
+            src="/assets/image1.jpg"
             alt="bitcoin"
           />
           <p className="font-semibold mt-3 text-center">John Smith</p>
@@ -64,7 +64,7 @@ export default function Team() {
         <div className="w-3/5 p-2 flex flex-col items-center justify-center">
           <img
             className="h-24 w-24 border-0 rounded-md"
-            src="../src/assets/image1.jpg"
+            src="/assets/image1.jpg"
             alt="bitcoin"
           />
           <p className="font-semibold mt-3 text-center">John Smith</p>

@@ -51,7 +51,7 @@ export default function AboutBitcoin() {
         >
           <img
             className="h-32 w-32 border-0 rounded-md"
-            src="../src/assets/image1.jpg"
+            src="/assets/image1.jpg"
             alt="bitcoin"
           />
           <div className="ml-6 mt-2">
@@ -70,7 +70,7 @@ export default function AboutBitcoin() {
         >
           <img
             className="h-32 w-32 border-0 rounded-md"
-            src="../src/assets/image 2.jpg"
+            src="/assets/image 2.jpg"
             alt="bitcoin"
           />
           <div className="ml-6 mt-2">
