@@ -33,6 +33,28 @@ export default function Home() {
     fetchApi();
   }, []);
 
+  const [trendingCoins, setTrendingCoins] = useState([]);
+
+  useEffect(() => {
+    const fetchApi = async () => {
+      try {
+        const response = await fetch(
+          "https://api.coingecko.com/api/v3/search/trending?order=gecko_inc"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        setTrendingCoins(data.coins);
+        console.log(data.coins); // Log the fetched coins data
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchApi();
+  }, []);
+
   return (
     <div className="my-5">
       <div className="flex items-center ml-8">
@@ -45,7 +67,7 @@ export default function Home() {
 
       <div className="flex flex-col md:flex-row gap-4 m-8 mt-4">
         {/* left */}
-        <div className="w-full md:w-2/3">
+        <div className="w-full md:w-3/4">
           {/* bitcoin */}
           <div className="bg-white p-6 border border-white rounded-lg">
             <div className="flex items-center">
@@ -74,7 +96,15 @@ export default function Home() {
                 >
                   <IoMdArrowDropup className="text-2xl" />
                   <span className="ml-1 mr-2">
-                    {bitcoinData.usd_24h_change.toFixed(2)}%
+                    {Number(
+                      Math.round(
+                        bitcoinData.usd_24h_change * 100 + Number.EPSILON
+                      ) / 100
+                    ).toLocaleString(undefined, {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}
+                    %
                   </span>
                 </div>
               ) : (
@@ -83,7 +113,15 @@ export default function Home() {
                 >
                   <IoMdArrowDropup className="text-2xl" />
                   <span className="ml-1 mr-2">
-                    {bitcoinData.usd_24h_change.toFixed(2)}%
+                    {Number(
+                      Math.round(
+                        bitcoinData.usd_24h_change * 100 + Number.EPSILON
+                      ) / 100
+                    ).toLocaleString(undefined, {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}
+                    %
                   </span>
                 </div>
               )}
@@ -150,8 +188,67 @@ export default function Home() {
         </div>
 
         {/* right */}
-        <div className="bg-blue-600 p-4 w-full md:w-1/3 md:max-w-sm border rounded-lg">
-          world{" "}
+        <div className="md:w-1/4 md:max-w-sm ">
+          <div className="bg-blue-600 border rounded-lg p-8">
+            <div className="flex flex-col justify-center items-center">
+              <h1 className="text-white font-semibold text-lg mb-4 text-center">
+                Get Started with KoinX for Free
+              </h1>
+              <p className="text-white text-sm mb-4 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias quae ipsum accusantium quibusdam. Amet autem quae
+                tenetur, voluptatum modi nihil
+              </p>
+              <img
+                className="h-32 mb-4"
+                src="../src/assets/image3.png"
+                alt="Logo"
+              />
+              <button className="bg-white text-black px-4 py-2 rounded-md font-semibold">
+                Get Started for Free
+              </button>
+            </div>
+          </div>
+          <div className="bg-white border rounded-lg mt-4 p-4">
+            <p className="font-semibold text-2xl">Trending Coins (24h)</p>
+            {trendingCoins.length > 0 && (
+              <>
+                {trendingCoins.slice(0, 3).map((coin, index) => (
+                  <div key={index} className="mt-5">
+                    <div className="flex items-center justify-between">
+                      <div className="flex">
+                        <FaBitcoin
+                          className="mr-1 text-3xl"
+                          style={{ color: "#F7931A" }}
+                        />
+                        <p>{coin.item.name}</p>
+                      </div>
+                      <div
+                        className={`flex items-center ml-6 border rounded-md font-semibold text-green-800 bg-green-100`}
+                      >
+                        <IoMdArrowDropup className="text-2xl" />
+                        <span className="ml-1 mr-2">
+                          {Number(
+                            Math.round(
+                              coin.item.data.price_change_percentage_24h.usd *
+                                100 +
+                                Number.EPSILON
+                            ) / 100
+                          ).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })}
+                          %
+                        </span>
+                      </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

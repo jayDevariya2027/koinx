@@ -124,7 +124,9 @@ export default function Footer() {
                     )}
                   </div>
                   <div className="mt-2 text-lg font-semibold">
-                    {trendingCoins[index].item.data.price}
+                    {trendingCoins[index].item.data.price
+                      ? ` ${trendingCoins[index].item.data.price}`
+                      : "0"}
                   </div>
                   <div className="mt-2">
                     <img
@@ -175,7 +177,7 @@ export default function Footer() {
                   )}
                 </div>
                 <div className="mt-2 text-lg font-semibold">
-                  {coin.item.data.price}
+                  {coin.item.data.price ? ` ${coin.item.data.price}` : "0"}
                 </div>
                 <div className="mt-2">
                   <img src={coin.item.data.sparkline} alt="" />
